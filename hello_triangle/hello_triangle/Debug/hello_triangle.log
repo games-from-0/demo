@@ -1,0 +1,6 @@
+﻿main.obj : error LNK2019: unresolved external symbol __imp__wglCreateContext@4 referenced in function "void __cdecl initialize_opengl(void)" (?initialize_opengl@@YAXXZ)
+main.obj : error LNK2019: unresolved external symbol __imp__wglGetProcAddress@4 referenced in function "void __cdecl initialize_opengl(void)" (?initialize_opengl@@YAXXZ)
+main.obj : error LNK2019: unresolved external symbol __imp__wglMakeCurrent@8 referenced in function "void __cdecl initialize_opengl(void)" (?initialize_opengl@@YAXXZ)
+main.obj : error LNK2019: unresolved external symbol __imp__glDrawArrays@12 referenced in function "void __cdecl render_triangle(void)" (?render_triangle@@YAXXZ)
+main.obj : error LNK2019: unresolved external symbol __imp__glViewport@16 referenced in function "void __cdecl initialize_window_and_opengl(void)" (?initialize_window_and_opengl@@YAXXZ)
+C:\gamedev\triangle\hello_triangle\Debug\hello_triangle.exe : fatal error LNK1120: 5 unresolved externals
