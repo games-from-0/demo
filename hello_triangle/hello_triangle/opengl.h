@@ -9,6 +9,7 @@
 #include <math.h>
 #include <stdint.h>
 #include "math.h"
+#include <stdio.h>
 
 bool running;
 bool resized;
@@ -155,4 +156,41 @@ void swap_buffers()
 bool is_window_open()
 {
     return running;
+}
+
+const char *load_vertex_shader_code()
+{
+    static const char *source = R"(
+
+#version 400
+
+vec4 positions[3] = vec4[3]( vec4(-0.5, -0.5, 0.0, 1.0), vec4(0.0, 0.5, 0.0, 1.0), vec4(0.5, -0.5, 0.0, 1.0) );
+
+void main()
+{
+    gl_Position = positions[gl_VertexID];
+}
+
+)";
+
+    return source;
+}
+
+const char *load_fragment_shader_code()
+{
+    static const char *source = R"(
+
+#version 400
+
+out vec4 out_color;
+
+void main()
+{
+    out_color = vec4(1.0, 0.0, 0.0, 1.0);
+}
+
+
+)";
+
+    return source;
 }

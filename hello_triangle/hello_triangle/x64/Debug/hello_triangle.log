@@ -1,1 +1,5 @@
-﻿  hello_triangle.vcxproj -> C:\gamedev\triangle\demo\hello_triangle\x64\Debug\hello_triangle.exe
+﻿  main.cpp
+C:\gamedev\triangle\demo\hello_triangle\hello_triangle\main.cpp(4,1): warning C4326:  return type of 'main' should be 'int' instead of 'void'
+C:\gamedev\triangle\demo\hello_triangle\hello_triangle\main.cpp(14,43): warning C4267:  'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\gamedev\triangle\demo\hello_triangle\hello_triangle\main.cpp(17,43): warning C4267:  'initializing': conversion from 'size_t' to 'int', possible loss of data
+  hello_triangle.vcxproj -> C:\gamedev\triangle\demo\hello_triangle\x64\Debug\hello_triangle.exe
